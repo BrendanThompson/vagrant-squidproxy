@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# This is the finalizer script, should be used for finalization type things i.e. starting serviceses deleting shit
+
+service squid start
+
+echo "All Done!"

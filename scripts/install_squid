@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# Install squid
+
+yum install squid -y
+chkconfig squid on

@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# Install Automake 2.69
+
+wget http://ftp.gnu.org/gnu/automake/automake-1.15.tar.gz
+tar xvf automake-1.15.tar.gz
+cd automake-1.15
+./configure
+make
+make install
+cd ..

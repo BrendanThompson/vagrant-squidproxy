@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+
+# bootstrap script
+
+mkdir /vagrant/tmp
+cd /vagrant/tmp
+
+# Execute scripts
+
+if [[ -x /vagrant/scripts/install_deps ]]; then
+    /vagrant/scripts/install_deps
+else
+    chmod +x /vagrant/scripts/install_deps
+    /vagrant/scripts/install_deps
+fi
+
+if [[ -x /vagrant/scripts/install_squid ]]; then
+    /vagrant/scripts/install_squid
+else
+    chmod +x /vagrant/scripts/install_squid
+    /vagrant/scripts/install_squid
+fi
+
+if [[ -x /vagrant/scripts/install_automake ]]; then
+    /vagrant/scripts/install_automake
+else
+    chmod +x /vagrant/scripts/install_automake
+    /vagrant/scripts/install_automake
+fi
+
+if [[ -x /vagrant/scripts/install_autoconf ]]; then
+    /vagrant/scripts/install_autoconf
+else
+    chmod +x /vagrant/scripts/install_autoconf
+    /vagrant/scripts/install_autoconf
+fi
+
+if [[ -x /vagrant/scripts/install_sqtop ]]; then
+    /vagrant/scripts/install_sqtop
+else
+    chmod +x /vagrant/scripts/install_sqtop
+    /vagrant/scripts/install_sqtop
+fi
+
+if [[ -x /vagrant/scripts/finalizer ]]; then
+    /vagrant/scripts/finalizer
+else
+   chmod +x  /vagrant/scripts/finalizer
+   /vagrant/scripts/finalizer
+fi
+
+rm -rf /vagrant/tmp

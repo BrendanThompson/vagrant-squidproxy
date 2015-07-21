@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Install all deps
+
+yum update -y
+yum install epel-release -y
+yum install gcc gcc-c++ git ncurses ncurses-devel ncurses-libs wget -y

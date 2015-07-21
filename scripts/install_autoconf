@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# Install Autoconf 2.69
+
+wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz
+tar xvf autoconf-2.69.tar.gz
+cd autoconf-2.69
+./configure --prefix=/usr
+make
+make install
+cd ..

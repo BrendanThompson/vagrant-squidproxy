@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# Install Sqtop
+
+autoreconf -ivf
+git clone https://github.com/paleg/sqtop.git
+cd sqtop
+./configure
+make
+make install
+cd ..
